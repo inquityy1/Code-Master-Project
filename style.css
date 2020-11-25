@@ -81,7 +81,7 @@ body {
 
 header {
 	min-height: 100vh;
-	background: url(img/header-bcg.jpeg)center/cover fixed no-repeat;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/header-bcg.jpeg)center/cover fixed no-repeat;
 	/*background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -124,6 +124,74 @@ nav {
 .bannerCard h3 {
 	letter-spacing: 10px;
 	text-transform: capitalize;
+}
+
+@media screen and (min-width:992px) {
+	.btn {
+		display: none;
+	}
+	
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+	.nav-container {
+		background: transparent;
+		border-bottom: none;
+		flex: 0 0 auto;
+	}
+	
+	.nav-links {
+		padding:  0 20px;
+		flex: 1 0 auto;
+		display: flex !important;
+		justify-content: flex-start;
+		flex: wrap;
+		align-self: center;
+	}
+	
+	.nav-links li {
+		flex: 1 0 auto;
+	}
+	
+	.nav-links a {
+		background: transparent;
+		text-align: center;
+		border-radius: 5px;
+		padding: 20px 10px;
+	}
+	
+	.nav-links a:hover {
+		padding-left: 10px;
+	}
+	
+	.nav-icons {
+		flex: 1 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+		justify-content: space-around;
+		list-style-type: none;
+		padding: 0 20px;
+	}
+	
+	.nav-icons li {
+		flex: 1 0 40px;
+		text-align: center;
+	}
+	
+	.nav-icons a {
+		font-size: 30px;
+		color: #8fcbfd;
+		transition: color 2s ease 1s;
+	}
+	
+	.nav-icons a:hover {
+		color: #f5f3f5;
+	}
+	
 }
 
 
