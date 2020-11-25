@@ -20,5 +20,17 @@ $(document).ready(function(){
 		}
 		
 	})
+	//smooth scroll
+	
+	$('.nav-links a').click(function(link){
+		link.preventDefault();
+		
+		let target = $(this).attr('href');
+		
+		$('html, body').stop().animate({
+			scrollTop:$(targer).offset().top
+		},3000);
+		
+	})
 	
 })
