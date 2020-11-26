@@ -538,6 +538,25 @@ nav {
 	margin-bottom: -60px ;
 }
 
+/* contact */
+
+.contact {
+	padding: 100px 0;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/projects-1.jpeg) center/cover fixed no-repeat;
+	color: #f5f3f5;
+}
+
+.contact-info,
+.contact-form {
+	margin: 40px 0;
+	padding: 20px 40px;
+}
+
+
+
+
+
+
 
 
 
